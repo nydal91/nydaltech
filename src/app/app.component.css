@@ -1,0 +1,28 @@
+  
+a:link {
+          color: white;
+      background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+	    color: white;
+	        background-color: transparent;
+		    text-decoration: none;
+	    }
+
+
+
+md-toolbar.md-blue {
+	      background: #0bc9f9;
+	          color: white; }
+
+
+
+      .app-icon-button {
+	      																																												                                  box-shadow: none;   user-select: none;																			                                background: none;								                                  border: none;       cursor: pointer;																		                                            filter: none;																													                                            font-weight: normal;																																		                                              height: auto;
+																															                                                  line-height: inherit;
+		   margin: 0;   min-width: 0;																                                                  padding: 0 14px;
+																							                                                      text-align: left;																		                                                            text-decoration: none;
+																									    }
+																															    .app-toolbar-filler {
+																									    flex: 1 1 auto; }

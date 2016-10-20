@@ -1,0 +1,26 @@
+  
+a:link {
+          color: white;
+      background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+	    color: white;
+	        background-color: transparent;
+		    text-decoration: none;
+	    }
+
+
+
+md-toolbar.md-blue {
+	      background: #0bc9f9;
+	          color: white; }
+
+
+
+      .app-icon-button {
+  padding: 0 14px; }
+  
+  .app-toolbar-filler {
+    flex: 1 1 auto;
+  }

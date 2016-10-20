@@ -1,0 +1,31 @@
+
+<md-card class="demo-card demo-basic">
+  <md-card-title>Send me a message </md-card-title>
+  <md-card-content>
+    <form [formGroup] ="taskForm" (ngSubmit) = "submitForm()">
+      <md-input class="demo-full-width" placeholder="name" type="text" id="name" 
+                     formControlName="name">
+      </md-input>
+
+      
+        <p><md-input placeholder="email"   type="text" id="email" 
+                     formControlName="email"></md-input></p>
+      <p>    <md-input  class="demo-full-width" placeholder="subject"  type="text" id="subject"
+                     formControlName="subject"></md-input></p>
+    
+      <p>
+      
+        <md-input class="demo-full-width" placeholder="messages" type="text" id="message" formControlName="message"></md-input>
+      </p>
+  
+  <md-card-actions>
+       <button md-button (click)="onCancel()">Cancel</button>
+        <button md-button type="submit" [disabled] = "!taskForm.valid" >Send</button>
+     
+				
+							             
+								         </md-card-actions>
+     
+    </form>
+  </md-card-content>
+</md-card>

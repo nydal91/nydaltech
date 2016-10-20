@@ -1,3 +1,38 @@
-<h1>
-  {{title}}
-</h1>
+
+<md-sidenav-layout class="demo-root" fullscreen>
+
+		          <md-sidenav #start  >
+				  			
+         
+				    <md-nav-list>
+					    <a md-list-item routerLink="/videos">Videos</a>
+					     
+								      <hr>
+
+								        </md-nav-list>
+									  <button md-button (click)="start.close()">CLOSE</button>
+
+									    
+									  			   
+									  						                        </md-sidenav>
+
+																											                          <md-toolbar color="blue" >
+																										<button class="app-icon-button" (click)="start.open()">
+													
+																																																					     <i class="material-icons app-toolbar-menu" >menu</i>
+																																																					     																									                                                       </button>
+
+
+																																																																																				       																															    		
+
+
+																																																																																				              
+
+																																																																														
+																					<a routerLink="/" routerLinkActive="active">Nydal Tech </a>																				        											      <span class="app-toolbar-filler"></span>																																																																																																																																																			      																																																                                                                    <button md-button routerLink="/about">About</button>																																																								                                                                      </md-toolbar>  																													<router-outlet></router-outlet>
+
+																																																																																																																																																																																																										    					<app-footer></app-footer>																																																																										 </md-sidenav-layout >
+
+
+
+

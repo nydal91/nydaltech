@@ -1,0 +1,23 @@
+<div class="container">
+
+       <div class="row">
+
+
+
+	       <div class="col-md-4" *ngFor=" let video of videos">   
+
+		        <md-card>
+					     <img md-card-image [src]="video.snippet.thumbnails.medium.url">
+					     	     <md-card-title>{{video.snippet.title}}</md-card-title>
+						     		     <md-card-content>
+									     			     <p>{{video.snippet.description}}</p>
+												     				       </md-card-content>
+																       				           <md-card-actions align="end">
+																						   						         
+																						   						   <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank"  md-button>Watch At Youtube</a>
+																												   							           </md-card-actions>
+																																				   								     </md-card>
+																																												     								         
+	       </div>
+
+       </div>	  </div>

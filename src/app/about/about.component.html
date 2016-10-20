@@ -1,0 +1,10 @@
+<div class="container">
+           <div class="col-md-4 col-md-4">
+<md-card> <md-card-title align="center" >{{ (items | async)?.title }}</md-card-title><md-card-content>
+																		  <p>{{ (items | async)?.des1 }}</p><p>{{ (items | async)?.title2 }}</p><p>{{ (items | async)?.lit2 }}</p>
+																																																		    <p>{{ (items | async)?.des2 }}</p>                     </md-card-content></md-card>
+</div><div class="col-md-4 col-md-4"><md-card><img md-card-image src="{{ (items | async)?.pic }}"><md-card-title>{{ (items | async)?.title3 }}</md-card-title><md-card-content><p>{{ (items | async)?.des3 }}</p></md-card-content></md-card></div>
+<div class="col-md-4 col-md-4">
+<app-form></app-form>
+</div>
+</div>

@@ -1,0 +1,100 @@
+<div class="container">
+
+
+                                                                                                                                                                                                                                                                                                                 <div class="col-md-4 col-md-4">
+
+																																							                                                                                                                                                                                                                                                                                 
+																																							                                                                                                                                                                                                                                                                                                                                                                                   <md-card>
+																																																																																						                                                                                                                                                                                                                                                                                                                                                                                             <md-card-subtitle>{{ (index | async)?.sub }}</md-card-subtitle>
+																																																																																																																																					                                                                                                                                                                                                                                                                                                                                                                                                   <md-card-title>{{ (index | async)?.title }}</md-card-title>
+																																																																																																																																																																																					                                                                                                                                                                                                                                                                                                                                                                                                         <md-card-content>
+																																																																																																																																																																																																																																							                                                                                                                                                                                                                                                                                                                                                                                                               <p>{{ (index | async)?.lit }}</p>
+																																																																																																																																																																																																																																																																																								                                                                                                                                                                                                                                                                                                                                                                                                                           <p>{{ (index | async)?.des }}</p>
+																																																																																																																																																																																																																																																																																																																																											                                                                                                                                                                                                                                                                                                                                                                                                                                 </md-card-content>
+																																																																																																																																																																																																																																																																																																																																																																																															                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+																																																																																																																																																																																																																																																																																																																																																																																															                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </md-card>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																									                                                                                                                                                                                                          
+																																																																																																																																																																																																																																																																																																																																																																																																																																																									   </div>
+
+<div *ngIf="user">
+
+
+		
+	   <div class="col-md-4 col-md-4">
+
+
+		     <md-card>
+			     	      
+			     	  
+			     	  <md-card-title align="center" >
+					  		   
+					  		  {{user.name}}
+							  	  
+							  
+							  	  </md-card-title>
+					  	       
+					  	
+
+					  	<md-card-content>
+							<p>{{user.bio}}</p>		        </md-card-content>
+									      					
+									      								      </md-card>
+
+
+
+	   </div>
+
+
+
+
+	     <div class="col-md-4 col-md-4">     
+
+		      <md-card>
+
+			      	   <md-card-title align="center" >
+					   		   {{user.email}} </md-card-title>
+
+					   <img md-card-image src="{{user.avatar_url}}">	    
+						     		    
+						     				        
+						     								     </md-card>
+
+														       </div>
+
+
+
+
+	</div>
+
+
+
+ <md-toolbar color="accent">
+	       <span>Project:</span>
+	           
+					       </md-toolbar>
+
+	<div class="row">
+	<div class="col-md-4" *ngFor="let repo of repos">
+
+	
+ <md-card>
+	 <md-card-subtitle>{{repo.homepage}}</md-card-subtitle>
+	     <md-card-title>{{repo.name}}</md-card-title>
+		     <md-card-content>
+			          
+				         <p>{{repo.description}}</p>    </md-card-content>
+					         <md-card-actions align="end" >
+							 <a md-button  href="{{repo.svn_url}}"  target="_blank">Check at Github</a>
+							             
+								         </md-card-actions>
+									     
+											         </md-card>
+
+												 </div> </div>
+
+ <md-toolbar color="blue"> 
+	 <span>Videos:</span>	
+ </md-toolbar>
+</div>												 <app-youtube></app-youtube> 
+
+												 
