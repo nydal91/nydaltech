@@ -32,10 +32,10 @@ import { FormComponent } from './form/form.component';
 // Must export the config
 export const firebaseConfig = {
 	  
- apiKey: "AIzaSyCKh1NkLIFtpJpJq7kHolp5Tb9l-L3Mzmw",
-     authDomain: "nydaltech.firebaseapp.com",
-         databaseURL: "https://nydaltech.firebaseio.com",
-	     storageBucket: "nydaltech.appspot.com"
+ apiKey: 
+     authDomain: 
+         databaseURL: 
+	     storageBucket: 
 
 };
 
